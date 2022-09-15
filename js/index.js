@@ -1,4 +1,4 @@
-// Gracias por no usar ; , pero al final el interprete los agrega xD
+// Gracias por no usaso ; , pero al final el interprete los agrega xD
 
 const doujutsus = "./src/json/dojutsus.json"
 
@@ -94,7 +94,6 @@ const getDo = async () => {
     }
   })
   portador.appendChild(fragment)
-  // Hijo?? qqqqqqqqqq
 }
 
 const getUsu = async () => {
@@ -105,7 +104,8 @@ const getUsu = async () => {
   const data = await response.json()
 
   portador.innerHTML = ""
-
+  
+  // GOD 20/10
   const min = 1
   const max = 51
 
@@ -123,7 +123,6 @@ const getUsu = async () => {
       ) {
         const div = document.createElement("div")
         div.classList.add("user-item")
-        // Hola, Goku SSJ 100 por favor
         const h2 = document.createElement("h2")
         h2.textContent = douj.usuario
 
@@ -181,7 +180,6 @@ const getUsuSearch = async () => {
 
         const p = document.createElement("p")
         p.textContent = "Clan: " + douj.clan
-        // Nerfeen a los Uchihas
         const p2 = document.createElement("p")
         p2.textContent = douj.dojutsu
 
@@ -265,13 +263,11 @@ const getUsuAll = async () => {
     usu.forEach((douj) => {
       const div = document.createElement("div")
       div.classList.add("user-item")
-      // Hola, Goku SSJ 100 por favor
       const h2 = document.createElement("h2")
       h2.textContent = douj.usuario
 
       const p = document.createElement("p")
       p.textContent = "Clan: " + douj.clan
-      // Nerfeen a los Uchihas
       const p2 = document.createElement("p")
       p2.textContent = douj.dojutsu
 
