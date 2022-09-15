@@ -4,7 +4,9 @@
     "title": "Sharingan",
     "description": "Sharingan (写輪眼, Pupila Giratoria). Es un doujutsu de línea sucesoria que sólo poseen los usuarios del Clan Uchiha de la Aldea Oculta de Konoha, del País del Fuego. Los motivos exactos para despertar el Sharingan no se saben ciertamente, aunque muchos creen que para despertarlo se ha de estar en una situación muy peligrosa o que amenace su vida, así el cuerpo, despierta el Sharingan para protegerse. El Sharingan es un doujutsu (técnica ocular); se caracteriza porque el que lo tiene, una capa de sangre cubre la pupila haciendo el ojo color rojo con dos o tres marcas en forma de coma apuntando a la pupila dependiendo del desarrollo de su técnica. Con esta técnica, su propietario es capaz de copiar todo tipo de técnicas de sus enemigos, incluyendo Taijutsu (cuerpo a cuerpo), Genjutsu (técnicas ilusorias) y ninjutsu (técnicas ninja), excepto otras técnicas de línea sucesoria y Ninjutsus de rango S.",
     "url": "./src/img/Sharingan/Sharingan.png",
+    "sound":"./src/sounds/Sharingan/Sharingan.mp3",
     "usuarios": [
+
       {
         "id": "1",
         "dojutsu": "Sharingan",
@@ -29,7 +31,7 @@
       {
         "id": "4",
         "dojutsu": "Sharingan",
-        "usuario": "Shisui Uchiha ",
+        "usuario": "Shisui Uchiha",
         "clan": "Uchiha",
         "url": "./src/img/Sharingan/Shisui_Uchiha.webp"
       },
@@ -43,7 +45,7 @@
       {
         "id": "6",
         "dojutsu": "Sharingan",
-        "usuario": "Sarada Uchiha.",
+        "usuario": "Sarada Uchiha",
         "clan": "Uchiha",
         "url": "https://laverdadnoticias.com/__export/1602351075187/sites/laverdad/img/2020/10/10/sarada_uchiha_sharingan.jpg_1902800913.jpg"
       },
@@ -96,7 +98,9 @@
     "title": "Mangekyō Sharingan",
     "description": "El Mangekyō Sharingan (万華鏡写輪眼, Mangekyō Sharingan, literalmente «Ojo Copiador Giratorio de Caleidoscopio») es una forma avanzada del Sharingan, que solo ha sido alcanzada por un puñado de Uchiha en la historia. Se dice que son los «ojos celestiales que ven la verdad de toda la creación sin obstrucción» (天壌の理を掌握せし瞳 tenjō no kotowari o shōakuseshi hitomi). Esta evolución le da a su usuario el acceso a un gran poder y la capacidad de realizar técnicas prohibidas y misteriosas; además, se distingue de un sharingan normal por su apariencia, que cambia drásticamente su diseño, según el portador del dōjutsu.",
     "url": "./src/img/MSharingan/MSharingan.webp",
+    "sound":"./src/sounds/MSharingan/MSharingan.mp3",
     "usuarios": [
+
       {
         "id": "13",
         "dojutsu": "Mangekyō Sharingan",
@@ -160,7 +164,9 @@
     "title": "Mangekyō Sharingan Eterno",
     "description": "Mangekyō Sharingan Eterno (永遠の万華鏡写輪眼, Fūmetsu Mangekyō Sharingan) es la metamorfosis del Mangekyō Sharingan. Es obtenido al quitarle el Mangekyō Sharingan a otro Uchiha e implantárselo. Al hacerlo ambos diseños se fusionan, el poseedor de dicho Sharingan puede utilizar las técnicas del Mangekyō Sharingan y sigue viendo sin que se le deteriore o pierda completamente la vista, es un Sharingan relativamente perfecto.",
     "url": "./src/img/MSharinganE/MSharinganE.webp",
+    "sound":"",
     "usuarios": [
+
       {
         "id": "21",
         "dojutsu": "Mangekyō Sharingan Eterno",
@@ -182,7 +188,9 @@
     "title": "Byakugan",
     "description": "El Byakugan (白眼, Ojo blanco) es un dōjutsu de línea sucesoria procedente del clan Hyūga. El cual se manifiesta desde el nacimiento en todos los usuarios del clan, aunque pueden diferenciarse según el poder que tome en cada persona. En el Byakugan se manifiestan dos fases: una pasiva y otra activa. El Byakugan pasivo, es decir mientras está desactivado muestra unos ojos malva, ni siquiera cristalinos capaces de ver e interpretar los movimientos del oponente. el Byakugan activo al activarse parece como si las blancas pupilas se agrietasen, a la vez que se marcan todas las venas de las templas de alrededor de los ojos.",
     "url": "./src/img/Byakugan/Byakugan.png",
+    "sound":"./src/sounds/Byakugan/Byakugan.mp3",
     "usuarios": [
+
       {
         "id": "23",
         "dojutsu": "Byakugan",
@@ -303,7 +311,9 @@
     "title": "Rinnegan",
     "description": "El Rinnegan (輪廻眼, Ojo del Samsara). es uno de los tres legendarios dojutsus que existen, se rumora que es el más poderoso. Este doujutsu legendario, era posesión del Maestro de los 6 caminos (Rikudou Sennin), el creador del ninjutsu moderno. Con el Rinnegan el usuario puede dominar los cinco elementos. También puede dividir su alma y habilidades en varios cuerpos, y los ojos de éstos son usados para ver de varios ángulos al oponente en un mismo instante, y detectar cualquier movimiento.",
     "url": "./src/img/Rinnegan/Rinnegan.png",
+    "sound":"./src/sounds/Rinnegan/Rinnegan.mp3",
     "usuarios": [
+
       {
         "id": "39",
         "dojutsu": "Rinnegan",
@@ -360,7 +370,9 @@
     "title": "Tenseigan",
     "description": "El Tenseigan (転生眼, Tenseigan literalmente «Ojo de Reencarnación») es un Dōjutsu despertado por el Clan Ōtsutsuki de la Luna a partir del Byakugan. Éste se caracteriza por una pupila azul rodeada por un iris con forma de flor de color azul y blanca.",
     "url": "./src/img/Tenseigan/Tenseigan.webp",
+    "sound":"",
     "usuarios": [
+
       {
         "id": "46",
         "dojutsu": "Tenseigan",
@@ -379,20 +391,22 @@
   },
   {
     "id": "7",
-    "title": "Rinne Sharingan",
-    "description": "El Rinne Sharingan (輪廻写輪眼, Rinne Sharingan literalmente «Ojo Copiador Giratorio de Saṃsāra») es el predecesor del Rinnegan y el Sharingan. Este ojo se caracteriza por su onda, como el patrón que se extiende a lo largo del globo ocular, con un fino iris rojo y escleróticas, conteniendo nueve tomoe, tres en cada una de las escleróticas.",
+    "title": "Rinne-Sharingan",
+    "description": "El Rinne-Sharingan (輪廻写輪眼, Rinne-Sharingan literalmente «Ojo Copiador Giratorio de Saṃsāra») es el predecesor del Rinnegan y el Sharingan. Este ojo se caracteriza por su onda, como el patrón que se extiende a lo largo del globo ocular, con un fino iris rojo y escleróticas, conteniendo nueve tomoe, tres en cada una de las escleróticas.",
     "url": "./src/img/Rinne_Sharingan/Rinne_Sharingan.webp",
+    "sound":"./src/sounds/Rinne_Sharingan/Rinne_Sharingan.mp3",
     "usuarios": [
+
       {
         "id": "48",
-        "dojutsu": "Rinne Sharingan",
+        "dojutsu": "Rinne-Sharingan",
         "usuario": "Kaguya Ōtsutsuki",
         "clan": "Ōtsutsuki",
         "url": "https://www.cultture.com/pics/2020/09/naruto-5-razones-por-las-que-isshiki-es-el-otsutsuki-mas-fuerte-amp-5-es-kaguya-3.jpg"
       },
       {
         "id": "49",
-        "dojutsu": "Rinne Sharingan",
+        "dojutsu": "Rinne-Sharingan",
         "usuario": "Madara Uchiha",
         "clan": "Uchiha",
         "url": "https://qph.cf2.quoracdn.net/main-qimg-5146a0d5415626eb5d9005fecceeaf72-lq"
@@ -404,7 +418,9 @@
     "title": "Jōgan",
     "description": "El Jōgan (浄眼, Jōgan; literalmente «Ojo Puro») es un Dōjutsu despertado por Boruto Uzumaki en su ojo derecho. El Jōgan es capaz de percibir el flujo de chakra, lo que le permite a Boruto observar los cambios visibles en el chakra de un individuo y también rastrearlo a través del mismo.",
     "url": "./src/img/Jōgan/Jōgan.svg",
+    "sound":"",
     "usuarios": [
+
       {
         "id": "50",
         "dojutsu": "Jōgan",
@@ -419,7 +435,9 @@
     "title": "Dōjutsu de Isshiki Ōtsutsuki",
     "description": "Es un dōjutsu que posee Isshiki Ōtsutsuki en su ojo derecho con el cual puede encoger la materia y volverla a agrandar, también es capaz de almacenar objetos encogidos en una dimensión donde no transcurre el tiempo y liberarlos a voluntad.",
     "url": "./src/img/Doujutsu_de_Isshik/Doujutsu_de_Isshik.png",
+    "sound":"",
     "usuarios": [
+
       {
         "id": "51",
         "dojutsu": "Dōjutsu de Isshiki Ōtsutsuki",

@@ -58,6 +58,7 @@
               <span></span>Random Dōjutsu
             </button>
           </div>
+          
           <!-- Dios bendiga a bootstrap, me ahorre el Modal xd -->
         </section>
         <section class="cards">
@@ -65,9 +66,13 @@
             <h2>Usuarios de Dōjutsu</h2>
           </div>
           <div class="cards_usuarios card-wrapper"></div>
+          <br />
           <div class="random__refresh-button">
+            <label for="bMiem"
+              >Buscador de Usuarios: <input id="bMiem" type="text" onkeypress="getUsuSearch()"
+            /></label>
             <button type="button" onclick="getUsu()">
-              <span></span>Random Dōjutsu
+              <span></span>Random usuario
             </button>
           </div>
         </section>
@@ -93,25 +98,22 @@
       <ul>
         <li>
           Github repository:
-          <a href="https://github.com/pxel1310/5IV7_AyalaGonzlezIan_AP" target="_blank"
+          <a
+            href="https://github.com/pxel1310/5IV7_AyalaGonzlezIan_AP"
+            target="_blank"
             >5IV7_AyalaGonzlezIan_AP</a
           >
         </li>
         <li>
           Nombre:
-          <a target="_blank"
-            >Ayala González Ian</a
-          >
+          <a target="_blank">Ayala González Ian</a>
         </li>
         <li>
           Grupo:
-          <a target="_blank"
-            >5IV7</a
-          >
+          <a target="_blank">5IV7</a>
         </li>
       </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
   </body>

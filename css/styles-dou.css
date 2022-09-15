@@ -124,6 +124,12 @@ body {
   background-color: var(--color4);
 }
 
+#sd{
+  background-color: var(--color3);
+  position: relative;
+  margin: .1rem .1rem .1rem .5rem;
+}
+
 /* Ni noto la diferncia, 1 hr perdida .-. */
 .dou-item button:active,
 .user-item button:active {

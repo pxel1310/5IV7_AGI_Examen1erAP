@@ -73,6 +73,23 @@ const getDo = async () => {
       div.appendChild(h2)
       div.appendChild(img)
       div.appendChild(button)
+
+      if (douj["sound"] != "") {
+        const buttonSd = document.createElement("button")
+        const buttonTextSd = document.createTextNode("Sonido")
+        buttonSd.appendChild(buttonTextSd)
+        buttonSd.type = "button"
+        buttonSd.setAttribute("id", "sd")
+
+        buttonSd.addEventListener("click", () => {
+          let etiquetaAudio = document.createElement("audio")
+          etiquetaAudio.setAttribute("src", douj.sound)
+          etiquetaAudio.play()
+        })
+
+        div.appendChild(buttonSd)
+      }
+
       fragment.appendChild(div)
     }
   })
@@ -119,43 +136,158 @@ const getUsu = async () => {
         const img = document.createElement("img")
         img.src = douj.url
 
-        // const button = document.createElement("button")
-        // const buttonText = document.createTextNode("+ Favorito")
-        // button.appendChild(buttonText)
-        // button.type = "button"
+        div.appendChild(h2)
+        div.appendChild(p2)
+        div.appendChild(p)
+        div.appendChild(img)
+        fragment.appendChild(div)
+      }
+    })
+  })
+  portador.appendChild(fragment)
+}
+
+const getUsuSearch = async () => {
+  const portador = document.querySelector(".cards_usuarios")
+  const fragment = new DocumentFragment()
+
+  const response = await fetch(doujutsus)
+  const data = await response.json()
+
+  portador.innerHTML = ""
+
+  let serch = String(document.querySelector("#bMiem").value)
+  serch = serch.toLowerCase().trim()
+  console.log(serch)
+
+  data.forEach((dou) => {
+    const usu = dou["usuarios"]
+
+    usu.forEach((douj) => {
+      let qwe = douj["usuario"]
+      let weq = douj["dojutsu"]
+      let ewq = douj["usuario"]
+
+      qwe = qwe.toLowerCase().trim()
+      weq = weq.toLowerCase().trim()
+      ewq = ewq.toLowerCase().trim()
+
+      if (qwe.includes(serch) || weq.includes(serch) || ewq.includes(serch)) {
+        const div = document.createElement("div")
+        div.classList.add("user-item")
+        // Hola, Goku SSJ 100 por favor
+        const h2 = document.createElement("h2")
+        h2.textContent = douj.usuario
+
+        const p = document.createElement("p")
+        p.textContent = "Clan: " + douj.clan
+        // Nerfeen a los Uchihas
+        const p2 = document.createElement("p")
+        p2.textContent = douj.dojutsu
+
+        const img = document.createElement("img")
+        img.src = douj.url
 
         div.appendChild(h2)
         div.appendChild(p2)
         div.appendChild(p)
         div.appendChild(img)
-        // div.appendChild(button)
         fragment.appendChild(div)
       }
     })
   })
-
   portador.appendChild(fragment)
-
-  console.log(
-    "⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ ⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿" +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿ " +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿ ⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿" +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿" +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀ ⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿ " +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀ ⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿ " +
-      "\n" +
-      "⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿" +
-      "\n" +
-      "\n" +
-      "JIJIJAJA"
-  )
 }
 
-getDo()
-getUsu()
+const getDoAll = async () => {
+  const portador = document.querySelector(".cards_doujutsus")
+  const fragment = new DocumentFragment()
+
+  const response = await fetch(doujutsus)
+  const data = await response.json()
+  portador.innerHTML = ""
+
+  data.forEach((douj) => {
+    const div = document.createElement("div")
+    div.classList.add("dou-item")
+
+    const h2 = document.createElement("h2")
+    h2.textContent = douj.title
+
+    const img = document.createElement("img")
+    img.src = douj.url
+
+    const button = document.createElement("button")
+    const buttonText = document.createTextNode("+ Info")
+    button.appendChild(buttonText)
+    button.type = "button"
+    button.setAttribute("data-bs-toggle", "modal")
+    button.setAttribute("data-bs-target", "#mimodal")
+    button.onclick = () => info(douj.id)
+
+    div.appendChild(h2)
+    div.appendChild(img)
+    div.appendChild(button)
+
+    if (douj["sound"] != "") {
+      const buttonSd = document.createElement("button")
+      const buttonTextSd = document.createTextNode("Sonido")
+      buttonSd.appendChild(buttonTextSd)
+      buttonSd.type = "button"
+      buttonSd.setAttribute("id", "sd")
+
+      buttonSd.addEventListener("click", () => {
+        let etiquetaAudio = document.createElement("audio")
+        etiquetaAudio.setAttribute("src", douj.sound)
+        etiquetaAudio.play()
+      })
+
+      div.appendChild(buttonSd)
+    }
+
+    fragment.appendChild(div)
+  })
+  portador.appendChild(fragment)
+}
+
+const getUsuAll = async () => {
+  const portador = document.querySelector(".cards_usuarios")
+  const fragment = new DocumentFragment()
+
+  const response = await fetch(doujutsus)
+  const data = await response.json()
+
+  portador.innerHTML = ""
+
+  data.forEach((dou) => {
+    const usu = dou["usuarios"]
+
+    usu.forEach((douj) => {
+      const div = document.createElement("div")
+      div.classList.add("user-item")
+      // Hola, Goku SSJ 100 por favor
+      const h2 = document.createElement("h2")
+      h2.textContent = douj.usuario
+
+      const p = document.createElement("p")
+      p.textContent = "Clan: " + douj.clan
+      // Nerfeen a los Uchihas
+      const p2 = document.createElement("p")
+      p2.textContent = douj.dojutsu
+
+      const img = document.createElement("img")
+      img.src = douj.url
+
+      div.appendChild(h2)
+      div.appendChild(p2)
+      div.appendChild(p)
+      div.appendChild(img)
+      fragment.appendChild(div)
+    })
+  })
+  portador.appendChild(fragment)
+}
+
+getDoAll()
+getUsuAll()
 // SIUUUUUUUUUUUUUUUUUUUUUUUUUUU
